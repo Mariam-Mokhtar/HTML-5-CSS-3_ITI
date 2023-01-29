@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web form vaildation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <form action="./welcome.html">
+            <h2>Change Email Address</h2>
+            Name
+            <input type="text" pattern="[A-Za-z]{6}" required name="name" id="name" autocomplete="off" />
+            <div id="name_div">
+                The Requird user name may be only 6 alphabetical characters
+            </div>
+            <br />
+            Email 
+            <input type="email"  required name="email" id="email" autocomplete="off" />
+            <div id="email_div">
+                The Requird email may not include any special character other than @
+            </div>
+            <br />
+            <input type="submit" value="Change">
+        </form>
+    </section>
+</body>
+
+</html>

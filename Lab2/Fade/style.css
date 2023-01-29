@@ -1,0 +1,10 @@
+#panda
+{
+    margin-top: 100px;
+    width: 50%;
+    transition: all 3s ease-in-out;
+}
+
+#panda:hover{
+    opacity: 0;
+}
