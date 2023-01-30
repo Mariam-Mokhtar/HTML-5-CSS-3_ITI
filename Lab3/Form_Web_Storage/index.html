@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web form vaildation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <form action="./welcome.html" onsubmit="writeToLocalStorage()">
+            <h3>Change Email Address</h3>
+            <span>Name</span>
+            <input type="text" pattern="[A-Za-z]{1,15}" required name="name" id="user_name" autocomplete="off" />
+            <div id="name_div">
+                The Requird user name may be only alphabetical characters
+            </div>
+            <br/>
+            <span>Email</span>
+            <input type="email" required name="email" id="email" pattern="[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,5}$" autocomplete="off" />
+            <div id="email_div">
+                The Requird email may not include any special character other than @
+            </div>
+            <br/>
+            <input type="submit" value="Change" id="submit">
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

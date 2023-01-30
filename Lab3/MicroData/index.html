@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroData</title>
+</head>
+
+<body>
+    <figure style="text-align: center;">
+        <img src=".//vaildation_imgs/all.JPG">
+        <img src=".//vaildation_imgs/organization.JPG">
+        <img src=".//vaildation_imgs/address.JPG">
+        <img src=".//vaildation_imgs/geo.JPG">
+    </figure>
+    <section style="display: none;">
+        <div itemscope itemtype="http://data-vocabulary.org/Organization">
+            <h2 itemprop="name">OS,Alex,ITI.</h2>
+            <p itemprop="telephone">03 4449776</p>
+            <a itemprop="url" href="https://www.iti.gov.eg/"></a>
+        </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Address">
+            <span itemprop="street-address">1 Mahmoud Salamah,Al Attarin</span>
+            <span itemprop="locailty">Alexandria</span>
+            <span itemprop="region">Alexandria</span>
+            <span itemprop="country-name">Egypt</span>
+            <span itemprop="postal-code">1234</span>
+        </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Geo">
+            <span itemprop="latitude">30.2545N</span>
+            <span itemprop="longtitude">20.2545w</span>
+        </div>
+    </section>
+</body>
+
+</html>
